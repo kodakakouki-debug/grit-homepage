@@ -315,6 +315,11 @@ h2{font-size:clamp(36px,3.8vw,56px)}
 .path{list-style:none;display:flex;flex-wrap:wrap;gap:8px 0;padding:0;margin:14px 0 0}
 .path li{font-family:"Shippori Mincho B1",serif;font-weight:700;font-size:17px}
 .path li+li::before{content:"→";color:var(--ac);margin:0 12px;font-family:sans-serif}
+
+.ct h3{padding-left:14px;border-left:3px solid var(--ac);line-height:1.4;margin:40px 0 16px}
+.ct .role+h3{margin-top:28px}
+.sl{margin:22px 0 0;color:var(--mut);font-size:13px;letter-spacing:.12em}
+.qt{font-family:"Shippori Mincho B1",serif;font-weight:800;font-size:clamp(20px,3.4vw,28px);line-height:1.6;margin:0 0 16px;color:var(--ac)}
 </style>
 </head>
 <body>
@@ -396,9 +401,9 @@ h2{font-size:clamp(36px,3.8vw,56px)}
 <section id="coach" class="alt"><div class="w">
  <h2>指導者</h2>
  <div class="cgrid">
-  <button class="ccard" data-d="d-seki"><span class="cph"><span class="mono">関</span><span class="pimg" role="img" aria-label="関 潤哉" style="background-image:var(--p-seki)"></span></span><span class="cinfo"><b>関 潤哉</b><em>Seki Junya</em><span class="role">Grit Soccer School 代表・指導者</span><span class="more">詳しく見る →</span></span></button>
-  <button class="ccard" data-d="d-setoyama"><span class="cph"><span class="mono">瀬</span></span><span class="cinfo"><b>瀬戸山 俊</b><em>Setoyama Shun</em><span class="role">Grit Soccer School 指導者</span><span class="more">詳しく見る →</span></span></button>
-  <button class="ccard" data-d="d-kodaka"><span class="cph"><span class="mono">小</span><span class="pimg" role="img" aria-label="小高 康暉" style="background-image:var(--p-kodaka)"></span></span><span class="cinfo"><b>小高 康暉</b><em>Kodaka Koki</em><span class="role">Grit Soccer School 指導者</span><span class="more">詳しく見る →</span></span></button>
+  <button class="ccard" data-d="d-seki"><span class="cph"><span class="mono">関</span><span class="pimg" role="img" aria-label="関 潤哉" style="background-image:var(--p-seki)"></span></span><span class="cinfo"><b>関 潤哉</b><em>Seki Junya</em><span class="role">代表・コーチ</span><span class="more">詳しく見る →</span></span></button>
+  <button class="ccard" data-d="d-setoyama"><span class="cph"><span class="mono">瀬</span></span><span class="cinfo"><b>瀬戸山 俊</b><em>Setoyama Shun</em><span class="role">コーチ</span><span class="more">詳しく見る →</span></span></button>
+  <button class="ccard" data-d="d-kodaka"><span class="cph"><span class="mono">小</span><span class="pimg" role="img" aria-label="小高 康暉" style="background-image:var(--p-kodaka)"></span></span><span class="cinfo"><b>小高 康暉</b><em>Kodaka Koki</em><span class="role">コーチ</span><span class="more">詳しく見る →</span></span></button>
   <!-- 指導者を追加するときは、上の button と、下の dialog をそれぞれコピーして書き換えます -->
  </div>
 </div></section>
@@ -406,13 +411,20 @@ h2{font-size:clamp(36px,3.8vw,56px)}
  <div class="ph"><span class="mono">関</span><span class="pimg" role="img" aria-label="関 潤哉" style="background-image:var(--p-seki)"></span></div>
  <div class="ct">
   <p class="nm" id="dn-seki">関 潤哉<span>Seki Junya</span></p>
-  <p class="role">Grit Soccer School 代表・指導者</p>
-  <p class="in">「サッカーが上手くなるために、特別な才能は必要ありません。」</p>
-  <p class="in">大切なのは、熱量を持って取り組むこと、人の話を素直に聴くこと、頭を使うこと、そして挑戦し続けること。サッカーは積み重ねのスポーツです。日々の小さな成長が、選手を大きく変えていきます。</p>
-  <p class="in">サッカー歴34年以上、指導歴23年以上。これまでの指導の中で、プロサッカー選手、世代別日本代表選手、高校サッカー全国大会出場選手、地域トレセン選手を輩出してきました。</p>
+  <p class="role">代表・コーチ</p>
+  <h3>サッカー・指導経歴</h3>
+  <p class="in">サッカー歴34年以上、指導歴23年以上。</p>
+  <p class="in">これまでにプロサッカー選手、世代別日本代表選手、全国大会出場選手などの育成に携わってきました。国内外の指導者ライセンスを取得し、培ってきた経験と指導ノウハウを活かして、選手の育成に取り組んでいます。</p>
   <p class="pf">※上記は過去の指導経験に基づくもので、Grit Soccer School単独の実績ではありません。</p>
-  <h3>学びと資格</h3>
+  <p class="sl">保有資格・学び</p>
   <ul class="qs"><li>日本・オランダ・イングランドのサッカー協会公認指導者ライセンス</li><li>サンパウロ州フットサル協会公認ライセンス</li><li>モンテネグロサッカー協会公認指導者ライセンス</li><li>スペインスカウト資格</li><li>ピリオダイゼーション理論</li><li>審判資格</li></ul>
+  <h3>指導の特徴・強み</h3>
+  <p class="in">選手一人ひとりの課題を見極め、成長につながるトレーニングを設計することを得意としています。</p>
+  <p class="in">プレーの結果だけでなく、判断・認知・技術など、さまざまな視点から原因を分析し、選手の理解度や状況に合わせた指導を行っています。</p>
+  <h3>指導で大切にしていること</h3>
+  <p class="qt">「夢を目標に。目標を現実に。」</p>
+  <p class="in">サッカーを楽しむ気持ちを大切にしながら、自分で考え、失敗を恐れず挑戦し続けられる選手の育成を目指しています。</p>
+  <p class="in">一人ひとりの可能性を信じ、目標に向かって努力し、成長を実感できる環境をつくっていきます。</p>
  </div>
 </div></dialog>
 
@@ -420,7 +432,7 @@ h2{font-size:clamp(36px,3.8vw,56px)}
  <div class="ph"><span class="mono">瀬</span></div>
  <div class="ct">
   <p class="nm" id="dn-setoyama">瀬戸山 俊<span>Setoyama Shun</span></p>
-  <p class="role">Grit Soccer School 指導者</p>
+  <p class="role">コーチ</p>
   <p class="in">プロフィールは準備中です。</p>
  </div>
 </div></dialog>
@@ -428,11 +440,15 @@ h2{font-size:clamp(36px,3.8vw,56px)}
  <div class="ph"><span class="mono">小</span><span class="pimg" role="img" aria-label="小高 康暉" style="background-image:var(--p-kodaka)"></span></div>
  <div class="ct">
   <p class="nm" id="dn-kodaka">小高 康暉<span>Kodaka Koki</span></p>
-  <p class="role">Grit Soccer School 指導者</p>
-  <p class="in">私が指導で大切にしているのは、サッカーを楽しむことです。その中でも、選手自身が考え、答えを導くことができるような指導を心掛けています。</p>
-  <p class="in">サッカー歴18年、指導歴4年。</p>
-  <h3>経歴</h3>
+  <p class="role">コーチ</p>
+  <h3>サッカー・指導経歴</h3>
+  <p class="in">サッカー歴18年以上、指導歴4年以上。</p>
+  <p class="sl">経歴</p>
   <ol class="path"><li>Juns SC U-12</li><li>Juns SC U-15</li><li>都立駒場高校</li><li>早稲田大学</li></ol>
+  <h3>指導の特徴・強み</h3>
+  <p class="in">サッカーを理屈で捉え、うまくいく理由を説明します。再現性の高い技術指導を得意としています。</p>
+  <h3>指導で大切にしていること</h3>
+  <p class="in">選手にサッカーを楽しんでもらうことを大切にしています。その中でも、選手自身が考え、答えを導くことができるような指導を心掛けています。</p>
  </div>
 </div></dialog>
 <section id="school"><div class="w">
