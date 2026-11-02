@@ -320,6 +320,38 @@ h2{font-size:clamp(36px,3.8vw,56px)}
 .ct .role+h3{margin-top:28px}
 .sl{margin:22px 0 0;color:var(--mut);font-size:13px;letter-spacing:.12em}
 .qt{font-family:"Shippori Mincho B1",serif;font-weight:800;font-size:clamp(20px,3.4vw,28px);line-height:1.6;margin:0 0 16px;color:var(--ac)}
+
+[hidden]{display:none!important}
+#voices .w{text-align:center}
+.vf{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:36px 0 40px}
+.vf button{font:inherit;font-size:14px;color:var(--mut);background:none;border:1px solid var(--ln);border-radius:999px;padding:10px 20px;min-height:44px;cursor:pointer;transition:border-color .3s,color .3s,background .3s}
+.vf button:hover{border-color:var(--ac)}
+.vf button.on{border-color:var(--ac);color:var(--wh);background:rgba(205,174,106,.1)}
+.vgrid{columns:1;column-gap:24px;text-align:left}
+@media(min-width:860px){.vgrid{columns:2}}
+.vc{break-inside:avoid;margin:0 0 22px;padding:28px 26px;border:1px solid var(--ln);border-radius:16px;background:linear-gradient(180deg,#1b1d1f,#131415)}
+.vtag{display:inline-block;color:var(--ac);font-size:12px;letter-spacing:.16em;margin-bottom:14px}
+.vc blockquote{margin:0}
+.vc blockquote p{margin:0;font-family:"Shippori Mincho B1",serif;font-weight:500;font-size:clamp(17px,2.4vw,19px);line-height:1.95}
+.vc figcaption{margin-top:18px;padding-top:14px;border-top:1px solid var(--ln);color:var(--mut);font-size:13px}
+.vg{margin:14px 0 0;padding-left:12px;border-left:2px solid var(--ac);color:var(--mut);font-size:13px;line-height:1.8}
+
+.vgrid{columns:auto;display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:4px 20px 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.vgrid::-webkit-scrollbar{display:none}
+.vc{flex:0 0 82%;scroll-snap-align:start;margin:0}
+.vnav{display:none}
+.va{width:48px;height:48px;border-radius:50%;border:1px solid var(--ln);background:none;color:var(--wh);font-size:26px;line-height:1;cursor:pointer;transition:border-color .3s,opacity .3s;padding:0 0 4px}
+.va:hover:not(:disabled){border-color:var(--ac)}
+.va:disabled{opacity:.3;cursor:default}
+@media(min-width:860px){
+.vgrid{columns:auto;margin:0;padding:4px 0 20px;gap:20px}
+.vc{flex:0 0 calc((100% - 20px)/2)}
+.vnav{display:flex;justify-content:center;gap:14px;margin-top:8px}
+}
+@media(min-width:1100px){.vc{flex:0 0 calc((100% - 40px)/3)}}
+
+.vgrid{scroll-padding-left:20px;scroll-padding-right:20px}
+@media(min-width:860px){.vgrid{scroll-padding-left:0;scroll-padding-right:0}}
 </style>
 </head>
 <body>
@@ -460,6 +492,24 @@ h2{font-size:clamp(36px,3.8vw,56px)}
   <p class="in">選手にサッカーを楽しんでもらうことを大切にしています。その中でも、選手自身が考え、答えを導くことができるような指導を心掛けています。</p>
  </div>
 </div></dialog>
+<section id="voices"><div class="w">
+ <h2>保護者の声</h2>
+ <p class="in">アンケートにご協力いただいた保護者の方のお声を、同意のもと、一部抜粋・編集して掲載しています。</p>
+ <div class="vf" role="group" aria-label="カテゴリーで絞り込む"><button class="on" data-c="all" aria-pressed="true">すべて</button><button data-c="技術の成長" aria-pressed="false">技術の成長</button><button data-c="考える力" aria-pressed="false">考える力</button><button data-c="コーチ・雰囲気" aria-pressed="false">コーチ・雰囲気</button><button data-c="活動の魅力" aria-pressed="false">活動の魅力</button></div>
+ <div class="vgrid">
+  <figure class="vc" data-c="技術の成長"><span class="vtag">技術の成長</span><blockquote><p>「少ない人数で個人的に教えていただけるので、すごく上手になったと感じます。江戸川プライマリーにも合格できました！」</p></blockquote><figcaption>小学6年生の保護者</figcaption><p class="vg">Gritより：ご合格、おめでとうございます。これからの挑戦も、引き続き応援しています。</p></figure>
+  <figure class="vc" data-c="考える力"><span class="vtag">考える力</span><blockquote><p>「Grit加入後は、サッカーに対する考え方に大きな変化がありました。どうすればもっと上手くなれるのか、どうすればもっといいプレーができるのかを考え、常に意識しながら練習に取り組んでいます。限られた練習時間の中で、どれだけ多く取り組めるかを考えて、ムダの少ない行動ができている点にも成長を感じています。」</p></blockquote><figcaption>小学3年生の保護者</figcaption><p class="vg">Gritより：自分で考えて取り組む姿勢は、Gritが大切にしていることです。これからも、その気持ちを大事に伸ばしていきます。</p></figure>
+  <figure class="vc" data-c="コーチ・雰囲気"><span class="vtag">コーチ・雰囲気</span><blockquote><p>「コーチに対する信頼度が200%のため、Grit活動日が待ち遠しく毎回楽しみにしております。」</p></blockquote><figcaption>小学3年生の保護者</figcaption><p class="vg">Gritより：大きな信頼をいただき、ありがとうございます。活動日を楽しみにしてもらえるよう、これからも全力で向き合います。</p></figure>
+  <figure class="vc" data-c="技術の成長"><span class="vtag">技術の成長</span><blockquote><p>「以前より周りを見てプレーができるようになったと感じました。体の使い方も、スクールに入ってから格段に上手くなったように思います。試合を見ていても、判断の速さが上がったなぁと感じました。」</p></blockquote><figcaption>小学6年生の保護者</figcaption><p class="vg">Gritより：成長を感じていただけて嬉しいです。体の使い方や判断は、これからも一人ひとりに合わせて丁寧に伝えていきます。</p></figure>
+  <figure class="vc" data-c="活動の魅力"><span class="vtag">活動の魅力</span><blockquote><p>「不定期開催の1DAY大会ですが、いろいろな方とプレーできる、とても貴重な経験です。素敵なイベントだと思います。」</p></blockquote><figcaption>小学3年生の保護者</figcaption><p class="vg">Gritより：ご参加ありがとうございます。いろいろな方とプレーできる機会を、これからも大切にしていきます。</p></figure>
+  <figure class="vc" data-c="考える力"><span class="vtag">考える力</span><blockquote><p>「ディフェンスを褒められたことで、家でぶつかる練習をしたり、試合のときは『ディフェンス負けないようにする』と具体的な目標をもって参加するようになりました。トレーニングでは本気になっているのか、汗をかくようになりました。」</p></blockquote><figcaption>小学3年生の保護者</figcaption><p class="vg">Gritより：具体的な目標をもって取り組んでくれていることが、とても嬉しいです。これからも、一人ひとりの良いところをしっかり伝えていきます。</p></figure>
+  <figure class="vc" data-c="コーチ・雰囲気"><span class="vtag">コーチ・雰囲気</span><blockquote><p>「Gritの練習後のフィードバックがとても詳しくて感動します。良かったプレーの動画も送ってくださるので、毎回『こんなプレーができるようになったんだな』と、成長を嬉しく感じています。」</p></blockquote><figcaption>小学3年生の保護者</figcaption><p class="vg">Gritより：成長を一緒に喜ぶきっかけにしていただき、ありがとうございます。これからも、一人ひとりの様子を丁寧にお伝えしていきます。</p></figure>
+  <figure class="vc" data-c="活動の魅力"><span class="vtag">活動の魅力</span><blockquote><p>「スクールは休みたくないという意識が出るくらい、夢中になっています。コーチからの動画やアドバイスが届いたときは子どもに伝えていますが、毎回はにかんでいます。」</p></blockquote><figcaption>小学3年生の保護者</figcaption><p class="vg">Gritより：そんなふうに言ってもらえて嬉しいです。これからも、サッカーの楽しさを大切にしていきます。</p></figure>
+  <figure class="vc" data-c="活動の魅力"><span class="vtag">活動の魅力</span><blockquote><p>「先日の1時間だけの練習には不満そうだったので、お休みしました。もっとやりたいみたいです！（笑）」</p></blockquote><figcaption>小学6年生の保護者</figcaption><p class="vg">Gritより：施設の都合で60分となりました。今後は、施設が使用できない場合も、事前に代替施設を長く使えるよう動いていきます。</p></figure>
+ </div>
+ <div class="vnav"><button type="button" class="va" id="vprev" aria-label="前の声へ">‹</button><button type="button" class="va" id="vnext" aria-label="次の声へ">›</button></div>
+ <p class="note2">成果には個人差があり、効果を保証するものではありません。</p>
+</div></section>
 <section id="school"><div class="w">
  <h2>スクール案内</h2>
  <p class="in">東京都江戸川区で、継続的に活動している小学生のためのサッカースクールです。</p>
@@ -554,6 +604,20 @@ tb.forEach(function(b,i){b.addEventListener('click',function(){sel(b)});b.addEve
 <script>
 document.querySelectorAll('.ccard').forEach(function(c){c.addEventListener('click',function(){document.getElementById(c.dataset.d).showModal()})});
 document.querySelectorAll('.cdlg').forEach(function(d){d.querySelector('.cx').addEventListener('click',function(){d.close()});d.addEventListener('click',function(e){if(e.target===d)d.close()})});
+</script>
+<script>
+(function(){var bs=document.querySelectorAll('.vf button'),cs=document.querySelectorAll('.vc');
+bs.forEach(function(b){b.addEventListener('click',function(){var c=b.dataset.c;bs.forEach(function(x){var on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});cs.forEach(function(v){v.hidden=!(c==='all'||v.dataset.c===c)})})})})();
+</script>
+<script>
+(function(){var g=document.querySelector('.vgrid'),p=document.getElementById('vprev'),n=document.getElementById('vnext');if(!g)return;
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function upd(){p.disabled=g.scrollLeft<=2;n.disabled=g.scrollLeft+g.clientWidth>=g.scrollWidth-2}
+function step(d){var c=g.querySelector('.vc:not([hidden])');if(!c)return;g.scrollBy({left:d*(c.offsetWidth+20),behavior:rm?'auto':'smooth'})}
+p.addEventListener('click',function(){step(-1)});n.addEventListener('click',function(){step(1)});
+g.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);
+document.querySelectorAll('.vf button').forEach(function(b){b.addEventListener('click',function(){g.scrollTo({left:0});setTimeout(upd,50)})});
+upd();})();
 </script>
 </body>
 </html>
