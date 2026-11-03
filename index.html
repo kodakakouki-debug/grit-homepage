@@ -406,6 +406,11 @@ h2{font-size:clamp(36px,3.8vw,56px)}
 #voices .vf button{display:inline-block;margin:5px}
 #voices .va{display:inline-block;margin:0 7px;vertical-align:middle}
 @media(min-width:860px){#voices .vnav{display:block;text-align:center;margin:12px 0 0}}
+
+#voices>.vf{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;width:100%;margin:36px 0 40px;padding:0 20px;box-sizing:border-box}
+#voices>.vf button{display:inline-block;margin:0}
+@media(min-width:860px){#voices>.vnav{display:flex;justify-content:center;gap:14px;width:100%;margin:12px 0 0}}
+#voices>.vnav .va{margin:0}
 </style>
 </head>
 <body>
@@ -549,8 +554,8 @@ h2{font-size:clamp(36px,3.8vw,56px)}
 <section id="voices"><div class="w">
  <h2>保護者の声</h2>
  <p class="in">アンケートにご協力いただいた保護者の方のお声を、同意のもと、一部抜粋・編集して掲載しています。</p>
- <div class="vf" role="group" aria-label="カテゴリーで絞り込む"><button class="on" data-c="all" aria-pressed="true">すべて</button><button data-c="技術の成長" aria-pressed="false">技術の成長</button><button data-c="考える力" aria-pressed="false">考える力</button><button data-c="コーチ・雰囲気" aria-pressed="false">コーチ・雰囲気</button><button data-c="活動の魅力" aria-pressed="false">活動の魅力</button></div>
 </div>
+<div class="vf" role="group" aria-label="カテゴリーで絞り込む"><button class="on" data-c="all" aria-pressed="true">すべて</button><button data-c="技術の成長" aria-pressed="false">技術の成長</button><button data-c="考える力" aria-pressed="false">考える力</button><button data-c="コーチ・雰囲気" aria-pressed="false">コーチ・雰囲気</button><button data-c="活動の魅力" aria-pressed="false">活動の魅力</button></div>
 <div class="vgrid">
   <figure class="vc" data-c="技術の成長"><span class="vtag">技術の成長</span><blockquote><p>「少ない人数で個人的に教えていただけるので、すごく上手になったと感じます。江戸川プライマリーにも合格できました！」</p></blockquote><figcaption>小学6年生の保護者</figcaption><p class="vg">Gritより：ご合格、おめでとうございます。これからの挑戦も、引き続き応援しています。</p></figure>
   <figure class="vc" data-c="考える力"><span class="vtag">考える力</span><blockquote><p>「Grit加入後は、サッカーに対する考え方に大きな変化がありました。どうすればもっと上手くなれるのか、どうすればもっといいプレーができるのかを考え、常に意識しながら練習に取り組んでいます。限られた練習時間の中で、どれだけ多く取り組めるかを考えて、ムダの少ない行動ができている点にも成長を感じています。」</p></blockquote><figcaption>小学3年生の保護者</figcaption><p class="vg">Gritより：自分で考えて取り組む姿勢は、Gritが大切にしていることです。これからも、その気持ちを大事に伸ばしていきます。</p></figure>
@@ -562,10 +567,11 @@ h2{font-size:clamp(36px,3.8vw,56px)}
   <figure class="vc" data-c="活動の魅力"><span class="vtag">活動の魅力</span><blockquote><p>「スクールは休みたくないという意識が出るくらい、夢中になっています。コーチからの動画やアドバイスが届いたときは子どもに伝えていますが、毎回はにかんでいます。」</p></blockquote><figcaption>小学3年生の保護者</figcaption><p class="vg">Gritより：そんなふうに言ってもらえて嬉しいです。これからも、サッカーの楽しさを大切にしていきます。</p></figure>
   <figure class="vc" data-c="活動の魅力"><span class="vtag">活動の魅力</span><blockquote><p>「先日の1時間だけの練習には不満そうだったので、お休みしました。もっとやりたいみたいです！（笑）」</p></blockquote><figcaption>小学6年生の保護者</figcaption><p class="vg">Gritより：施設の都合で60分となりました。今後は、施設が使用できない場合も、事前に代替施設を長く使えるよう動いていきます。</p></figure>
  </div>
+<div class="vnav"><button type="button" class="va" id="vprev" aria-label="前の声へ">‹</button><button type="button" class="va" id="vnext" aria-label="次の声へ">›</button></div>
 <div class="w">
- <div class="vnav"><button type="button" class="va" id="vprev" aria-label="前の声へ">‹</button><button type="button" class="va" id="vnext" aria-label="次の声へ">›</button></div>
  <p class="note2">成果には個人差があり、効果を保証するものではありません。</p>
 </div></section>
+
 <section id="school"><div class="w">
  <h2>スクール案内</h2>
  <p class="in">東京都江戸川区で、継続的に活動している小学生のためのサッカースクールです。</p>
